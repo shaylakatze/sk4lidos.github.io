@@ -1,37 +1,49 @@
-/* Base styles */
-body {
+/* Reset margins and paddings */
+* {
   margin: 0;
-  background-color: #0a0a0a; /* dark background */
-  color: #ddd;
-  font-family: sans-serif;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Container centers content horizontally and adds top spacing */
-.container {
-  max-width: 800px;      /* limit content width */
-  margin: 40px auto 0;   /* 40px from top, auto horizontal centering */
-  text-align: center;    /* center text inside container */
+/* Body background and font */
+body {
+  background-color: #0a0a0a;
+  color: #ddd;
+  font-family: sans-serif;
+  text-align: center;        /* horizontally center all content */
+  padding-top: 50px;         /* push content down from top */
 }
 
 /* Name */
 h1 {
-  color: #d28eff; /* purple */
-  margin: 0 0 5px 0;
+  color: #d28eff;  /* purple */
+  margin-bottom: 5px;
 }
 
 /* Domain */
 .domain {
-  color: #ff82d2; /* pink */
-  margin: 0 0 15px 0;
+  color: #ff82d2;  /* pink */
+  margin-bottom: 20px;
   font-size: 1.2em;
 }
 
 /* Links */
 .links a {
-  margin-right: 20px; /* spacing between links */
   text-decoration: none;
   font-size: 1.2em;
+  margin: 0 25px;  /* horizontal spacing between links */
+  color: #d28eff;  /* default purple */
 }
 
-/* Specific link colors */
-.links a:nth-child(2) { color: #ff82d2; } /* Art - pink */
+/* Specific link color for Art */
+.links a:nth-child(2) {
+  color: #ff82d2; /* pink */
+}
+
+/* Mobile stacking */
+@media (max-width: 500px) {
+  .links a {
+    display: block;
+    margin: 10px 0;
+  }
+}
