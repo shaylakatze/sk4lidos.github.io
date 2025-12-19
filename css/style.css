@@ -1,31 +1,38 @@
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+/* Basic resets */
+html, body {
   margin: 0;
-  background-color: #0a0a0a;
+  padding: 0;
+  height: 100%;
+  background-color: #0a0a0a; /* dark background */
   color: #ddd;
   font-family: sans-serif;
-}
-
-.top {
-  padding-top: 5vh; /* name near top */
-  text-align: center;
-}
-
-.middle {
-  flex: 1; /* pushes links to middle vertically */
   display: flex;
-  align-items: center;
+  flex-direction: column;
+}
+
+/* Top section - name near top */
+.top {
+  text-align: center;
+  padding: 5vh 0 0 0; /* push slightly down from very top */
+}
+
+/* Middle section - links centered vertically */
+.middle {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  flex: 1; /* fill remaining space */
+  gap: 2em; /* spacing between links */
 }
 
-.links a {
-  margin: 0 1.5em;
+/* Links styling */
+.middle a {
   text-decoration: none;
+  font-size: 1.2em;
+  font-weight: normal;
 }
 
-/* Colors */
-.links a:nth-child(1) { color: #d28eff; } /* Projects - purple */
-.links a:nth-child(2) { color: #ff82d2; } /* Art - pink */
-.links a:nth-child(3) { color: #d28eff; } /* Information - purple */
+/* Specific link colors */
+.middle a:nth-child(1) { color: #d28eff; } /* Projects - purple */
+.middle a:nth-child(2) { color: #ff82d2; } /* Art - pink */
+.middle a:nth-child(3) { color: #d28eff; } /* Information - purple */
