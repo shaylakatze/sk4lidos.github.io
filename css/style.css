@@ -1,4 +1,4 @@
-/* Reset margins and paddings */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -10,19 +10,25 @@ body {
   background-color: #0a0a0a;
   color: #ddd;
   font-family: sans-serif;
-  text-align: center;        /* horizontally center all content */
-  padding-top: 50px;         /* push content down from top */
+}
+
+/* Wrapper: centers everything horizontally, adds top spacing */
+.wrapper {
+  display: block;
+  width: fit-content;   /* shrink to content width */
+  margin: 50px auto 0 auto;  /* top 50px, horizontally centered */
+  text-align: center;   /* center text inside wrapper */
 }
 
 /* Name */
 h1 {
-  color: #d28eff;  /* purple */
+  color: #d28eff;
   margin-bottom: 5px;
 }
 
 /* Domain */
 .domain {
-  color: #ff82d2;  /* pink */
+  color: #ff82d2;
   margin-bottom: 20px;
   font-size: 1.2em;
 }
@@ -31,13 +37,12 @@ h1 {
 .links a {
   text-decoration: none;
   font-size: 1.2em;
-  margin: 0 25px;  /* horizontal spacing between links */
-  color: #d28eff;  /* default purple */
+  margin: 0 25px;
+  color: #d28eff;
 }
 
-/* Specific link color for Art */
 .links a:nth-child(2) {
-  color: #ff82d2; /* pink */
+  color: #ff82d2; /* Art - pink */
 }
 
 /* Mobile stacking */
