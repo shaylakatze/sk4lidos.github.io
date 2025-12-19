@@ -1,10 +1,14 @@
 /* Base styles */
 body {
-  margin: 20px; /* small top/side margin */
+  margin: 0;
   background-color: #0a0a0a; /* dark background */
   color: #ddd;
   font-family: sans-serif;
-  text-align: left; /* aligns everything to top-left by default */
+}
+
+/* Container to push content away from edges */
+.container {
+  padding: 40px; /* gives space from top and sides */
 }
 
 /* Name */
@@ -16,13 +20,13 @@ h1 {
 /* Domain */
 .domain {
   color: #ff82d2; /* pink */
-  margin: 0 0 10px 0;
+  margin: 0 0 15px 0;
   font-size: 1.2em;
 }
 
 /* Links */
 .links a {
-  margin-right: 20px; /* horizontal spacing between links */
+  margin-right: 20px; /* spacing between links */
   text-decoration: none;
   color: #d28eff; /* default purple */
 }
