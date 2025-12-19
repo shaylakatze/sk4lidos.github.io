@@ -1,3 +1,4 @@
+/* Reset & base styles */
 html, body {
   margin: 0;
   padding: 0;
@@ -7,30 +8,33 @@ html, body {
   font-family: sans-serif;
 }
 
-body {
-  display: flex;
-  justify-content: flex-start; /* start from top */
-  align-items: center;         /* horizontal center */
-}
-
+/* Container to hold all content */
 .container {
+  max-width: 800px;
+  margin: 5vh auto 0 auto; /* name near top, auto horizontal center */
   text-align: center;
-  padding-top: 10vh; /* space from top */
 }
 
+/* Name styling */
 h1 {
-  margin: 0;
+  margin: 0 0 0.5em 0;
   color: #d28eff; /* purple */
 }
 
+/* Domain styling */
 .domain {
-  margin: 0.5em 0 2em 0;
+  margin: 0 0 2em 0;
   color: #ff82d2; /* pink */
   font-size: 1.2em;
 }
 
+/* Links styling */
+.links {
+  display: inline-flex;
+  gap: 3em; /* spacing between links */
+}
+
 .links a {
-  margin: 0 2.5em; /* extra spacing between links */
   text-decoration: none;
   font-size: 1.2em;
 }
@@ -39,3 +43,11 @@ h1 {
 .links a:nth-child(1) { color: #d28eff; } /* Projects - purple */
 .links a:nth-child(2) { color: #ff82d2; } /* Art - pink */
 .links a:nth-child(3) { color: #d28eff; } /* Information - purple */
+
+/* Mobile-friendly stacking */
+@media (max-width: 500px) {
+  .links {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+}
