@@ -15,29 +15,30 @@ body {
 /* Wrapper: centers everything horizontally, adds top spacing */
 .wrapper {
   display: block;
-  width: fit-content;   /* shrink to content width */
-  margin: 50px auto 0 auto;  /* top 50px, horizontally centered */
-  text-align: center;   /* center text inside wrapper */
+  width: fit-content;           
+  margin: 50px auto 0 auto;     
+  text-align: center;           
 }
 
 /* Name */
 h1 {
   color: #d28eff;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 4em; /* much bigger name */
 }
 
 /* Domain */
 .domain {
   color: #ff82d2;
-  margin-bottom: 20px;
-  font-size: 1.2em;
+  margin-bottom: 30px;
+  font-size: 2em; /* larger domain */
 }
 
 /* Links */
 .links a {
   text-decoration: none;
-  font-size: 1.2em;
-  margin: 0 25px;
+  font-size: 1.8em;  /* bigger links */
+  margin: 0 35px;    /* more spacing between links */
   color: #d28eff;
 }
 
@@ -47,8 +48,11 @@ h1 {
 
 /* Mobile stacking */
 @media (max-width: 500px) {
+  h1 { font-size: 3em; }
+  .domain { font-size: 1.5em; }
   .links a {
     display: block;
-    margin: 10px 0;
+    margin: 15px 0;
+    font-size: 1.5em;
   }
 }
