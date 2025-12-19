@@ -6,9 +6,11 @@ body {
   font-family: sans-serif;
 }
 
-/* Container to push content away from edges */
+/* Container centers content horizontally and adds top spacing */
 .container {
-  padding: 40px; /* gives space from top and sides */
+  max-width: 800px;      /* limit content width */
+  margin: 40px auto 0;   /* 40px from top, auto horizontal centering */
+  text-align: center;    /* center text inside container */
 }
 
 /* Name */
@@ -28,7 +30,7 @@ h1 {
 .links a {
   margin-right: 20px; /* spacing between links */
   text-decoration: none;
-  color: #d28eff; /* default purple */
+  font-size: 1.2em;
 }
 
 /* Specific link colors */
